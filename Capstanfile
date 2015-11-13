@@ -1,0 +1,5 @@
+base: cloudius/osv-openjdk8
+cmdline: /java.so -cp /riemann.jar riemann.bin start /riemann.config
+files:
+  /riemann.jar: ./riemann-0.2.10/lib/riemann.jar
+  /riemann.config: ./riemann.config

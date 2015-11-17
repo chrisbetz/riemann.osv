@@ -48,9 +48,10 @@ forwarding.
 
 Run the image on VirtualBox using this command (which will also build it):
 
-    capstan run -p vbox -f 5555:5555 -f 5556:5556
+    capstan run -p vbox -f 5555:5555 -f 5556:5556 -f 8001:8000
 
 It's essential to forward the ports, as otherwise I cannot access my guest machine. Bridged network is somewhat broken for me here :(
+You can find the Dashboard/REST API on http://localhost:8001/
 
 # Clear artefacts
 

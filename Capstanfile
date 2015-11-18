@@ -3,3 +3,5 @@ cmdline: /java.so -cp /riemann.jar -Dnetty.epoll.enabled=false riemann.bin start
 files:
   /riemann.jar: ./riemann-0.2.10/lib/riemann.jar
   /riemann.config: ./riemann.config
+  /usr/mgmt/local-init.yaml: local-init.yaml
+  /init/00-cmdline: cmdline

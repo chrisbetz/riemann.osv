@@ -1,0 +1,5 @@
+run:
+    - POST: /env/HOSTNAME
+      val: riemann.local
+# include:                 ## not working right now
+#    - load-from-cloud

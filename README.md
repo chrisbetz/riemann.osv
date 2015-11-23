@@ -72,3 +72,11 @@ Once installed correctly you can run `riemann-health` to send data to your Riema
 
 # Check whether it's ok
 I added a prn to the config in order to push events down to the console for debugging reasons.
+
+# Chaning the UUID of the disk images in VirtualBox
+
+Currently, OSv suffers from using the same UUID for its disk images. Thus, you cannot run two (different) instances of OSv unikernels in parallel, because vbox will prevent you from registering a different disk image under the same UUDI.
+
+You can circumvent this by changing the UUID using an internal command on the repository diskimage (before running the instance, obviously)
+
+    VBoxManage internalcommands sethduuid ~/.capstan/repository/riemann.osv/riemann.osv.vbox

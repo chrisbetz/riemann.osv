@@ -1,5 +1,7 @@
 run:
     - POST: /env/HOSTNAME
       val: riemann.local
+    - POST: /os/hostname
+      name: riemann.local
 include:
     - load-from-cloud

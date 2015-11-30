@@ -1,7 +1,13 @@
 base: cloudius/osv-openjdk8
-cmdline: /java.so -cp /riemann.jar -Dnetty.epoll.enabled=false riemann.bin start /riemann.config
+
+cmdline: /java.so -cp /riemann.jar:/elastic-riemann.jar -Dnetty.epoll.enabled=false riemann.bin start /riemann.config
+
 files:
   /riemann.jar: ./riemann-0.2.10/lib/riemann.jar
-  /riemann.config: ./riemann.config
+  /elastic-riemann.jar: ./plugins/elastic-riemann-0.1.1-SNAPSHOT-standalone.jar
+
+  /riemann.config: ./config/riemann.config
+  /config/default-mapping.json: ./config/default-mapping.json
+
   /usr/mgmt/local-init.yaml: local-init.yaml
   /init/00-cmdline: cmdline

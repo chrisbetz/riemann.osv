@@ -4,7 +4,7 @@ cmdline: /java.so -cp /riemann.jar:/elastic-riemann.jar -Dnetty.epoll.enabled=fa
 
 files:
   /riemann.jar: ./riemann-0.2.10/lib/riemann.jar
-  /elastic-riemann.jar: ./plugins/elastic-riemann-0.1.1-SNAPSHOT-standalone.jar
+  /elastic-riemann.jar: ./plugins/elastic-riemann-0.1.2-SNAPSHOT-standalone.jar
 
   /riemann.config: ./config/riemann.config
   /config/default-mapping.json: ./config/default-mapping.json

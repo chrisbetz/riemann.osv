@@ -1,3 +1,4 @@
+export CAPSTAN_QEMU_PATH=/usr/local/bin/qemu-system-x86_64
 capstan delete riemann.osv
 rm -rf ~/.capstan/repository/riemann.osv/
 capstan build -v -p vbox

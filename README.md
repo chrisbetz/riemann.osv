@@ -1,4 +1,12 @@
 # riemann.osv
+
+This is no longer a toy project, but part of a bigger logging/monitoring setup you might find useful. So please refer to the 'surrunding' project https://github.com/chrisbetz/logmon.
+
+
+I'm currently updating the READMEs, so until I'm done I'll keep the old readme here for reference.
+
+
+
 So far, this is a toy project to try out to run [Riemann](http://riemann.io/) in an [OSv](http://osv.io/) unikernel. You might also want to take a look into https://github.com/tzach/riemann/ and the associated blog post http://osv.io/blog/blog/2014/04/22/riemann-on-osv/, but stuff changed inside Riemann,
 making it a little harder.
 
